@@ -1,70 +1,65 @@
-# Getting Started with Create React App
+https://loizenai.com/reactjs-crud-firestore-example-firebase-tutorial/
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Reactjs CRUD Firestore example – Firebase Tutorial
 
-## Available Scripts
+![Reactjs CRUD Firestore example – Firebase Tutorial](https://loizenai.com/wp-content/uploads/2020/12/Reactjs-crud-firestore-example.png)
 
-In the project directory, you can run:
+Firestore is a NoSQL document database built for automatic scaling, high performance, and ease of application development. It supports offline mode so our app will work fine (write, read, listen to, and query data) whether device has internet connection or not, it automatically fetches changes from our database to Firebase Server. So In the tutorial, I introduce an example “Reactjs CRUD Firestore example”.
 
-### `yarn start`
+– I draw a fullstack overview diagram architecture from Reactjs frontend to Firestore.
+– I illustrate details about react-firestore CRUD operations.
+– I implement Reactjs application to do CRUD request (Post/Get/Put/Delete) to Firebase Firestore.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## Overvier Architecture Diagram – Reactjs CRUD Firestore
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+![Overvier Architecture Diagram – Reactjs CRUD Firestore](https://loizenai.com/wp-content/uploads/2020/12/Reactjs-Firebase-Realtime-Database-CRUD-Overview-Architecture-Diagram-2.png)
 
-### `yarn test`
+Reactjs CRUD Application is designed with 2 main layers:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+– React.js components let you split the UI into independent, reusable pieces, and think about each piece in isolation.
+– Firestore Service is used by above React Components to fetch (Post/Put/Get/Delete) data to Firestore.
 
-### `yarn build`
+Reactjs CRUD Application defines 5 components:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Home.js is used serve as the landing page for your app.
+- AppNavbar.js is used to establish a common UI feature between components.
+- CustomerList.js is used to show all customers in the web-page
+- CustomerEdit.js is used to modify the existed customer
+- App.js uses React Router to navigate between components.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Integrative Project Goal between Reactjs CRUD Firestore
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Reactjs Home page:
 
-### `yarn eject`
+![Reactjs Home page](https://loizenai.com/wp-content/uploads/2020/12/Project-Goal-Home-Page-1.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Reactjs add data:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+![Reactjs add data](https://loizenai.com/wp-content/uploads/2020/12/Project-Goal-Reactjs-Add-a-Customer-through-Nodejs-RestAPI-1.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+![React Firebase CRUD Example – Adding customers](https://loizenai.com/wp-content/uploads/2020/12/React-Firebase-CRUD-Example-Adding-customers.png)
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+Reactjs List all data:
 
-## Learn More
+![Reactjs List all data](https://loizenai.com/wp-content/uploads/2020/12/Reactjs-application-show-list-data-after-update-a-customer.png)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Reactjs update data:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Reactjs update data](https://loizenai.com/wp-content/uploads/2020/12/Project-Goal-Reactjs-Update-Customer-to-Firebase-2.png)
 
-### Code Splitting
+![React Firebase Update customer](https://loizenai.com/wp-content/uploads/2020/12/React-Firebase-Update-customer.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Reactjs delete a customer with id=2, check the Customer List after deleting:
 
-### Analyzing the Bundle Size
+![Reactjs delete a customer](https://loizenai.com/wp-content/uploads/2020/12/Reactjs-show-list-customers-after-doing-CRUD-operations-4.png)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+Check Firestore after do CRUD operations:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+![Check Firestore after do CRUD operations](https://loizenai.com/wp-content/uploads/2020/12/React-Firestore-delete-a-customer.png)
 
-### Advanced Configuration
+## Related post
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+- [Reactjs Node.js MySQL CRUD Example](https://loizenai.com/reactjs-nodejs-crud-mysql/)
+- [Reactjs Jwt SpringBoot Token Authentication Example – React.js Spring Security Login](https://loizenai.com/jwt-springboot-reactjs-token-authentication-example/)
+- [Reactjs Nodejs MongoDB CRUD Example – MERN Stack Application](https://loizenai.com/reactjs-nodejs-mongodb-crud/)
